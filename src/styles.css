@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+.card {
+  margin-top: 25px;
+}
+
+.formSection {
+  margin-top: 20px;
+}
+
+ul.iplTeams li {
+  list-style: none;
+  margin-top: 7px;
+}

@@ -1,14 +1,15 @@
-import { Component, Input, Output, ɵConsole } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: "app-root",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.css"]
+  selector: "app-home",
+  templateUrl: "./home.component.html",
+  styles: []
 })
-export class AppComponent {
-  title = "yottaasys";
+export class HomeComponent implements OnInit {
+  constructor() {}
 
-  /*
+  ngOnInit() {}
+
   iplTeams: object = {
     RCB: { p1: "kohli", p2: "ABD", team: "RCB" },
     CSK: { p1: "MSD", p2: "Bhajji", team: "CSK" },
@@ -21,5 +22,4 @@ export class AppComponent {
   setInput(teamToInput: string) {
     this.teamToInput = this.iplTeams[teamToInput];
   }
-  */
 }

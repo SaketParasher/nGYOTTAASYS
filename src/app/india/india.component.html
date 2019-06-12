@@ -1,0 +1,17 @@
+<div class="card-body">
+  <h5 class="card-title">India</h5>
+  <h6 class="card-subtitle mb-2 text-muted">
+    <!--<ul *ngIf="teamIndia">
+      <li *ngFor="let player of teamIndia">{{ player }}</li>
+    </ul>-->
+    <ng-template [ngIf]="teamIndia" [ngIfElse]="displayError">
+      <ul *ngIf="teamIndia">
+        <li *ngFor="let player of teamIndia">{{ player }}</li>
+      </ul>
+    </ng-template>
+
+    <ng-template #displayError>
+      <p>{{ errToDisplay }}</p>
+    </ng-template>
+  </h6>
+</div>
